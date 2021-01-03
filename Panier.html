@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Panier.css">
+    <script src="Panier.js" defer></script>
+
+
+    <title>Votre panier</title>
+    <style>
+        .content{
+            column-count:3;
+            column-gap:60px;
+        } 
+    </style>
+</head>
+<body>
+    <header>
+        <img src="piranha plant.jpeg" alt="plante" width="60px" />
+        <a href="index.html">Accueil| </a>
+        <a href="NotreTechnologie.html">Notre technologie|</a>
+        <a href="produits.html">Nos produits| </a>
+        <a href="Who are we.html">Notre équipe| </a>
+        <a href="Panier.html">Votre panier</a>
+
+
+    </header>
+    <hr/>
+    <main>
+        
+        <article id="rien">
+            <h3> Votre panier est vide !</h3>
+            <p>Cliquer <a href="link vers page principale">ici</a> pour ajouter des articles à votre panier.</p>
+            
+            
+        </article>
+
+        <article id="resumePanier" >
+            <h3> Votre panier </h3>
+            <br><br>
+            <table class="tableauProduits" id="panier" border="1px">
+                <tr>
+                    <th>Produits</th>
+                    <th>Quantité</th>
+                    <th> Sous-total </th>
+                </tr>
+
+                <tr class="ligneProduit">
+                    <td> <img src="globe.png" class="img-thumbnail" alt="product1" width="10%"> a globe </td>
+                    <td> 
+                        
+                        <input class="quantity" type="number" value="1" min="1">
+                        <button type="button" class="bouton boutonblanc" id="removeBouton" onclick="remove()">Remove</button>
+                    
+                    </td>
+                    <td class="soustotal"> 5 euros </td>
+                </tr>
+
+                <tr class="ligneProduit">
+                    <td>Product 2</td>
+                    <td> 
+                        
+                        <input class="quantity" type="number" value="1" min="1">
+                        <button type="button" class="bouton boutonblanc" id="removeBouton" onclick="remove()">Remove</button>
+                    
+                    </td>
+                    <td class="soustotal"> 5 euros </td>
+                </tr>
+
+                <tr class="ligneProduit">
+                    <td> Product 3</td>
+                    <td> 
+                        
+                        <input class="quantity" type="number" value="1" min="1" >
+                        <button type="button" class="bouton boutonblanc" id="removeBouton" onclick="remove()">Remove</button>
+                    
+                    </td>
+                    <td class="soustotal"> 15 euros</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"> TOTAL </td>
+                    
+                    <td id="total" value="0 euros"> </td>
+                </tr>
+            </table>
+
+            <br><br>
+
+
+            <button class="bouton boutonvert" id="boutonValidation"><a  href="#">Valider mon panier</a> </button>
+
+        </article>
+        
+               
+
+    </main>
+    <hr/>
+    <footer>
+        <div class="content">
+          <img src="piranha plant.jpeg" alt="plante" width="120px" />
+          <p>
+               
+               <b>Contact:</b> 
+          </p>
+          <p>
+                  01.02.03.04.05
+          </p>
+          <p>
+                  plantech@free.fr
+          </p> 
+          <p>
+            <b>Horaires:</b>
+          </p>
+          <p>
+            Du lundi au vendredi de 8h à 12h puis de 13h à 16h45
+          </p>
+          <p>
+            Dimanche de 9h à 12h45
+          </p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

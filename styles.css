@@ -1,0 +1,12 @@
+.gauche {float: left;
+	vertical-align: middle;	
+	margin: 10px;	
+}
+
+p {
+	text-align: justify;
+}
+
+form {
+	margin: 5px;
+}

@@ -1,0 +1,35 @@
+body{
+    text-align: center;
+} 
+
+#titreformulaire{
+    margin: auto;
+    font-weight: bold;
+    color : green;
+    text-align: center;
+}
+
+.bouton {
+    display:block;
+    width:100px;
+    line-height:25px;
+    text-align:center;
+    vertical-align:middle;
+    border-radius: 8px;
+}
+
+.boutonvert{
+    background-color:green;
+    color:white;
+    text-decoration:none;
+    border-collapse: collapse;
+    border-color: green;
+
+} 
+
+#confirmation{
+    width:200px;
+    line-height:40px;
+    font-size: medium;
+    margin: auto;
+}

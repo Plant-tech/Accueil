@@ -1,0 +1,73 @@
+h3{
+    color: green;
+    text-align: center;
+} 
+table : td {
+    text-align: center;
+} 
+#panier
+{
+ width : 80%;
+ margin: auto;
+ border: 2px ;
+ border-collapse : collapse;
+ border-color: rgb(255, 242, 208);
+} 
+
+
+#panier tr:nth-child(even) {
+    background: rgb(255, 242, 208);
+} 
+#panier tr:nth-child(odd) {
+    background: white;
+} 
+
+#boutonValidation {
+    margin: auto;
+}
+
+
+
+
+.bouton {
+    display:block;
+    width:100px;
+    line-height:25px;
+    text-align:center;
+    vertical-align:middle;
+    border-radius: 8px;
+}
+
+.boutonvert{
+    background-color:green;
+    color:white;
+    text-decoration:none;
+    border-collapse: collapse;
+    border-color: green;
+
+} 
+
+.boutonblanc{
+    background-color:white;
+    color:grey;
+    text-decoration:none;
+    border-color: grey;
+    border-collapse: collapse;
+} 
+
+#boutonValidation{
+    width:200px;
+    line-height:50px;
+} 
+#boutonValidation a {
+    color: white;
+    text-decoration: none;
+} 
+
+
+.quantity {
+    text-align: center;
+} 
+#removeBouton{
+    margin: auto;
+} 
