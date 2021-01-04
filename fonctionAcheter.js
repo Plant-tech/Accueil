@@ -10,7 +10,6 @@ function AjouterPanier(nomProd) {
       const subprice = document.createElement("td");
       row.className="ligneProduit";
       subprice.className="soustotal";
-      subprice.innerText= prix;
       
       // pour la case ProdCell
       
@@ -31,7 +30,7 @@ function AjouterPanier(nomProd) {
       quantityCell.appendChild(removeButton);
       
       //pour la case subprice
-      
+      subprice.innerText= prix;
       
       row.appendChild(ProdCell);
       row.appendChild(quantityCell);
