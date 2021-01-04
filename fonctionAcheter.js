@@ -2,7 +2,7 @@
 const boutonAcheter = document.getElementById("boutonAcheter");
 const panier=document.getElementById("panier");
 
-boutonAcheter.addEventListener("click",Acheter); 
+
 
 function AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProdU) {
 
@@ -59,3 +59,5 @@ function Acheter(event){
       const nomProd = section.firstChild.innertText;
       AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProdU);
 }
+
+boutonAcheter.addEventListener("click",Acheter); 
