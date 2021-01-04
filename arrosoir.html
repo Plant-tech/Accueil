@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+		<title>Arrosoir connecté</title>
+		<script defer src="code.js"></script>
+		<link rel="stylesheet" media="screen" href="styles.css" type="text/css"/>
+    </head>
+
+    <body>
+        <header></header>	
+        <main>
+			<section>
+				<h2 class="titreProduit">Arrosoir connecté</h2>
+				<h3 class="prix">De 20€ à 30€ selon la taille</h3>
+				<article>
+					<img src="arrosoir.jpeg" class="gauche" width=100 height=100 alt="arrosoir connecté">
+					<p>Cet incroyable système d'arrosage connecté vous permettra de donner le volume d'eau exact dont vos plantes ont besoin.
+					Il vous suffira de sélectionner le volume d'eau nécéssaire à votre plante et le système se chargera de l'arroser automatiquement, 
+					de façon progressive afin d'éviter les excès d'eau, qui sont la 1e cause de mortalité chez les plantes domestiques.
+					En l'achetant en complément du pot, vous aurez l'assurance que vos plantes auront tous ce qu'elles ont besoin pour se développer pleinement.
+					</p>
+					<table border="1">
+						<thead>
+							<tr>
+								<th>Volume</th>
+								<th>Prix</th>
+								<th>Couleurs disponibles</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>50 cl</td>
+								<td> 20€</td>
+								<td rowspan="2">Chrome, Cuivre</td>
+							</tr>
+							<tr>
+								<td>1L</td>
+								<td> 25€</td>
+							</tr>
+								<td>1.5L</td>
+								<td> 30€</td>
+								<td>Chrome</td>
+							</tr>
+						</tbody>
+					</table>				
+				</article>
+				<p>Choisissez une taille puis une couleur :</p>
+				<form id="listetailleA" name="listes">
+					<select name="tailleA" id="tailleA" onChange="changeSize(this.value)">
+						<option value="">Choisir...</option>
+						<option value="A">50cl</option>
+						<option value="B">1L</option>
+						<option value="C">1.5L</option>
+					</select>
+					<select name="couleurA" id="couleurA">
+						<option value="" disabled selected>Choisir...</option>
+					</select>
+					<select name="prixA" id="prixA">
+						<option value="" disabled selected>Prix de l'article</option>
+					</select>
+				</form>
+				<form target="popup" action="arrosoir.html" onsubmit="window.open('', this.target,'width=300,height=300,scrollbars=no,location=no,menubar=no,toolbar=no'); return true;">						
+					<input type="submit" value="Acheter"/>
+				</form>
+	    	                <a href="produits.html">Retour aux produits</a>
+			</section>
+        </main>
+        <footer></footer>
+    </body>
+<html>
