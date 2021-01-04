@@ -2,8 +2,6 @@
 const boutonAcheter = document.getElementById("boutonAcheter");
 const panier=document.getElementById("panier");
 
-
-
 function AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProdU) {
 
       const row = document.createElement("tr");
@@ -48,9 +46,9 @@ function AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProd
 }
 
 
-function Acheter(event){
+function Acheter(e){
       alert("le produit va etre ajouté");
-      const section = event.target.parentElement.parentElement;
+      const section = e.target.parentElement.parentElement;
       const enfants=section.childNodes[2];
       const couleurchoisie=section.getElementById("couleurP").selectedIndex.innerText;
       const taillechoisie= section.getElementById("tailleP").selectedIndex.innerText;
@@ -60,4 +58,4 @@ function Acheter(event){
       AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProdU);
 }
 
-boutonAcheter.addEventListener("onclick", Acheter); 
+boutonAcheter.addEventListener("click", Acheter); 
