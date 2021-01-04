@@ -49,7 +49,7 @@ function AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProd
 function Acheter(e){
       alert("le produit va etre ajouté");
       const section = e.target.parentElement.parentElement;
-      alert(section.getElementsByTagName("couleurP"));
+      alert(section.getElementsByTagName("couleurP").innerText);
       const enfants=section.childNodes[2];
       const couleurchoisie=section.getElementsByTagName("couleurP").selectedIndex.innerText;
       const taillechoisie= section.getElementsByTagName("tailleP").selectedIndex.innerText;
