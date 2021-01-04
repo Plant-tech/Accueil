@@ -1,11 +1,7 @@
 
 AcheterBouton.addEventListener("click",acheter)
 const panier=document.getElementById("panier");
-const couleurchoisie=
-const taillechoisie=
-const prixProdU=
-const sourceimage=
-const nomProd = 
+
 AcheterBouton.addEventListener("click",acheter); 
 function AjouterPanier(nomProd) {
 
@@ -50,7 +46,13 @@ function AjouterPanier(nomProd) {
 }
 
 function Acheter(event){
-      const idProd = event.target.parentElement.parentElement.id
+      const section = event.target.parentElement.parentElement
+      const enfants=section.childNodes[2];
+      const couleurchoisie=
+      const taillechoisie=
+      const prixProdU=
+      const sourceimage= enfants.src;
+      const nomProd = section.firstChild.innertText;
       if (idProd in panier) {
             
       }
