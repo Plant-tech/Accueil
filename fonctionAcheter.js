@@ -44,10 +44,12 @@ function AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProd
       row.appendChild(quantityCell);
       row.appendChild(subpriceCell);
       panier.appendChild(row);
+      alert("le produit a ete ajouté");
 }
 
 
 function Acheter(event){
+      alert("le produit va etre ajouté");
       const section = event.target.parentElement.parentElement;
       const enfants=section.childNodes[2];
       const couleurchoisie=section.getElementById("couleurP").selectedIndex.innerText;
