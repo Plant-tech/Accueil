@@ -58,4 +58,4 @@ function Acheter(e){
       AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProdU);
 }
 
-boutonAcheter.addEventListener("onclick", Acheter); 
+boutonAcheter.addEventListener('onclick', Acheter); 
