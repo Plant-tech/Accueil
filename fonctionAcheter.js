@@ -1,7 +1,11 @@
 
 
 const panier=document.getElementById("panier");
-
+const couleurchoisie=
+const taillechoisie=
+const prixProdU=
+const sourceimage=
+const nomProd = 
 function AjouterPanier(nomProd) {
 
       const row = document.createElement("tr");
@@ -14,9 +18,10 @@ function AjouterPanier(nomProd) {
       // pour la case ProdCell
       const image=document.createElement("img");
       image.src=#;
-      image.alt= //idproduit;
+      image.alt=nomProd;
       image.width="10%";
-      
+      const div = document.createElement("div");
+      div.innerText="Taille : "+ taillechoisie+"couleur : " + couleurchoisie
       
       // pour la case de quantité
       const q= document.createElement("input");
@@ -35,7 +40,7 @@ function AjouterPanier(nomProd) {
       quantityCell.appendChild(removeButton);
       
       //pour la case subprice
-      subprice.innerText= prix;
+      subprice.innerText= prixProdU;
       
       row.appendChild(ProdCell);
       row.appendChild(quantityCell);
