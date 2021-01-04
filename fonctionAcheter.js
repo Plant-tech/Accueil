@@ -1,8 +1,8 @@
 
-const boutonAcheter = 
+const boutonAcheter = document.getElementById("boutonAcheter");
 const panier=document.getElementById("panier");
 
-AcheterBouton.addEventListener("click",acheter); 
+boutonAcheter.addEventListener("click",acheter); 
 
 function AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProdU) {
 
@@ -48,11 +48,11 @@ function AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProd
 
 
 function Acheter(event){
-      const section = event.target.parentElement.parentElement
+      const section = event.target.parentElement.parentElement;
       const enfants=section.childNodes[2];
-      const couleurchoisie=
-      const taillechoisie=
-      const prixProdU=
+      const couleurchoisie=section.getElementById("couleurP").selectedIndex.innerText;
+      const taillechoisie= section.getElementById("tailleP").selectedIndex.innerText;
+      const prixProdU=section.getElementById("PrixP").selectedIdex.innerText;
       const sourceimage= enfants.src;
       const nomProd = section.firstChild.innertText;
       AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProdU);
