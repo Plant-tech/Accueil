@@ -51,9 +51,9 @@ function Acheter(e){
       const section = e.target.parentElement.parentElement;
       alert(section.getElementsByTagName("couleurP"));
       const enfants=section.childNodes[2];
-      const couleurchoisie=section.getElementsByTagName("couleurP")[0].selectedIndex.innerText;
-      const taillechoisie= section.getElementsByTagName("tailleP")[0].selectedIndex.innerText;
-      const prixProdU=section.getElementsByTagName("PrixP")[0].selectedIdex.innerText;
+      const couleurchoisie=section.getElementsByTagName("couleurP").selectedIndex.innerText;
+      const taillechoisie= section.getElementsByTagName("tailleP").selectedIndex.innerText;
+      const prixProdU=section.getElementsByTagName("prixP").selectedIndex.innerText;
       const sourceimage= enfants.src;
       const nomProd = section.firstChild.innertText;
       AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProdU);
