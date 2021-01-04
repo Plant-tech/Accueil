@@ -1,11 +1,12 @@
 
-
+AcheterBouton.addEventListener("click",acheter)
 const panier=document.getElementById("panier");
 const couleurchoisie=
 const taillechoisie=
 const prixProdU=
 const sourceimage=
 const nomProd = 
+AcheterBouton.addEventListener("click",acheter); 
 function AjouterPanier(nomProd) {
 
       const row = document.createElement("tr");
@@ -17,7 +18,7 @@ function AjouterPanier(nomProd) {
       
       // pour la case ProdCell
       const image=document.createElement("img");
-      image.src=#;
+      image.src=sourceimage;
       image.alt=nomProd;
       image.width="10%";
       const div = document.createElement("div");
@@ -46,4 +47,11 @@ function AjouterPanier(nomProd) {
       row.appendChild(quantityCell);
       row.appendChild(subpriceCell);
       panier.appendChild(row);
+}
+
+function Acheter(event){
+      const idProd = event.target.parentElement.parentElement.id
+      if (idProd in panier) {
+            
+      }
 }
