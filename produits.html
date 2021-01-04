@@ -32,7 +32,7 @@
 				des arrosoirs connectés qui donnent à vos plantes le volume d'eau exact qui leur est necéssaire (volume et couleur au choix), et enfin un detecteur d'humeur 
 				pour vos plantes (couleur au choix), qui vous permettra de mieux les comprendre et de répondre parfaitement à leurs besoins.
 			</p>
-			<section>
+			<section id="pot">
 				<h2 class="titreProduit">Pot connecté</h2>
 				<h3 class="prix">De 10€ à 40€ selon la taille</h3>
 				<div class="conteneur">
@@ -60,12 +60,14 @@
 							<option value="" disabled selected>Choisir...</option>
 						</select>
 					</form>
+					<p> Prix:</p>
+					<input type="text" id="prix" value="0" disabled="disabled" />
 					<input type="submit" value="Acheter"/>
 				</div>
 			</section>
 			<br>
 			<br>
-			<section>
+			<section id="arrosoir">
 				<h2 class="titreProduit">Arrosoir connecté</h2>
 				<h3 class="prix">De 20€ à 30€ selon la taille</h3>
 				<div class="conteneur">
@@ -83,20 +85,22 @@
 					<form id="listetailleA" name="listes">
 						<select name="tailleA" id="tailleA" onChange="changeSize(this.value)">
 							<option value="">Choisir...</option>
-							<option value="A">50cl</option>
-							<option value="B">1L</option>
-							<option value="C">1.5L</option>
+							<option value="F">50cl</option>
+							<option value="G">1L</option>
+							<option value="H">1.5L</option>
 						</select>
 						<select name="couleurA" id="couleurA">
 							<option value="" disabled selected>Choisir...</option>
 						</select>
 					</form>	
+					<p> Prix:</p>
+					<input type="text" id="prix" value="0" />
 					<input type="submit" value="Acheter"/>
 				</div>
 			</section>
 			<br>
 			<br>
-			<section>
+			<section id="musicaplante">
 				<h2 class="titreProduit">Musicaplante</h2>
 				<h3 class="prix">100€</h3>
 				<div class="conteneur">
@@ -113,11 +117,13 @@
 					<form id="listeCouleursM" name="listes">
 						<select name="CouleurM" id="CouleurM">
 							<option value="">Choisir...</option>
-							<option value="A">Noir</option>
-							<option value="B">Chrome</option>
-							<option value="C">Blanc</option>
+							<option value="I">Noir</option>
+							<option value="J">Chrome</option>
+							<option value="K">Blanc</option>
 						</select>
 					</form>	
+										<p> Prix:</p>
+					<input type="text" id="prix" value="0" />
 					<input type="submit" value="Acheter"/>
 				</div>
 				<br>
