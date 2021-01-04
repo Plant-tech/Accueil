@@ -19,7 +19,7 @@ function AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProd
       image.alt=nomProd;
       image.width="10%";
       const div = document.createElement("div");
-      div.innerText="Taille : "+ taillechoisie+"couleur : " + couleurchoisie
+      div.innerText="Taille : "+ taillechoisie+"couleur : " + couleurchoisie;
       
       // pour la case de quantité
       const q= document.createElement("input");
@@ -55,5 +55,5 @@ function Acheter(event){
       const prixProdU=
       const sourceimage= enfants.src;
       const nomProd = section.firstChild.innertText;
-      AjouterPanier();
+      AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProdU);
 }
