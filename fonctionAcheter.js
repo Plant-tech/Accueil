@@ -12,6 +12,11 @@ function AjouterPanier(nomProd) {
       subprice.className="soustotal";
       
       // pour la case ProdCell
+      const image=document.createElement("img");
+      image.src=#;
+      image.alt= //idproduit;
+      image.width="10%";
+      
       
       // pour la case de quantité
       const q= document.createElement("input");
