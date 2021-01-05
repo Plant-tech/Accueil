@@ -44,6 +44,16 @@ footer{
   text-align:center;
 }
 
+hr{
+    color:#6cac20;
+    width:30%;
+}
+
+a{
+    text-decoration:none;
+
+}
+
 
 #titreformulaire{
     margin: auto;
