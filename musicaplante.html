@@ -3,28 +3,30 @@
     <head>
         <meta charset="UTF-8"/>
         <title>Musicaplante</title>
+
+        <!--Lien JS-->
         <script defer src="code.js"></script>
-	<script defer src="fonctionAcheter.js"></script>
-	<link rel="stylesheet" media="screen" href="styles.css" type="text/css"/>
+	    <script defer src="fonctionAcheter.js"></script>
+        <!--<link rel="stylesheet" media="screen" href="styles.css" type="text/css"/>-->
+    
+         <!--Font-->
+		 <link rel="preconnect" href="https://fonts.gstatic.com">
+		 <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet"> 
+	   
+		 <!--Lien CSS-->
+		 <link rel="stylesheet" type="text/css" href="index.css">
+		 
     </head>
 
     <body>
-  <header>
-    <nav>
-      <a href="index.html" style="margin-left:30px;">Accueil </a>
-      <a href="produits.html" style="margin-left:30px;">Nos produits </a>
-      <a href="index.html"><img src="PLANT' TECHlogo.png" alt="logo" width="150px"/></a>
-      <a href="Who are we.html" style="margin-right:30px;">Notre équipe </a>
-      <a href="Panier.html" style="margin-right:30px;">Votre panier</a>
-  </nav>
-  <hr/>
-</header>	
-        <main>
+        <header></header>	
+        <main style="margin:4px;">
 			<section>
-				<h2 class="titreProduit">Musicaplante</h2>
+                <h2 class="titreProduit">Musicaplante</h2>
+                <hr style="width:100%;">
 				<h3 class="prix">100€</h3>
 				<article>
-                    <img src="musicaplante.jpeg" class="gauche" width=100 height=100 alt="arrosoir connecté"> 
+                    <img src="musicaplante.jpeg" class="gauche" alt="arrosoir connecté"> 
                     <p>Cet incroyable musicaplante vous permettra de connaître mieux vos plantes. Il suffit simplement de le planter dans le terreau de vos plantes, et il
                         analysera les ondes qu'elles émettent. Le détecteur vous informe ensuite de leur humeur et de leurs besoins. Avec notre détecteur, vous pourez enfin
                         comprendre vos plantes, et même communiquer avec elles. 
@@ -45,38 +47,42 @@
                         <option value="">100€</option>
                     </select>
                 </form>	
-		<button type="button" id="boutonAcheter" onClick="Acheter()">Acheter</button>
+        <button type="button" id="boutonAcheter" onClick="Acheter()">Acheter</button>
+        <br>
+        <br>
 		<a href="produits.html">Retour aux produits</a>
 		</section>
         </main>
-<footer>
-    <hr style="width:100%;"/>
-    <div class="footercontent">
-      <div class="box1">
-        <img src="PLANT' TECHlogo.png" alt="logo" width="200px" style="border-radius:100px;" />
-        <img src="facebook.png" alt="logofacebook" width="40px"/>
-        <img src="instagram.png" alt="logoinstagram" width="40px"/>
-        <img src="twitter.png" alt="logotwitter" width="40px"/>
-      </div>
-      <div class="box2">
-       <h3>Contact:</h3>
-       <hr style="width:20%;"/>
-        <p><img src="adress.png" alt="adresse" width="20px" style="vertical-align: middle;"/>
-        20 rue Metmoivingt 31400 TOULOUSE</p>
-        20 rue du Lierre 31400 TOULOUSE</p>
-        <p><img src="phone.png" alt="téléphone" width="30px" style="vertical-align: middle;"/>
-         01.02.03.04.05</p>
-        <p><img src="mail.png" alt="email" width="30px" style="vertical-align: middle;"/>
-         plantech@free.fr</p>
-      </div>
-      <div class="box3">
-       <h3>Horaires:</h3>
-       <hr style="width:20%;"/>
-        <p>Du <b>lundi au vendredi</b> de 8h à 12h puis de 13h à 16h45</p>
-        <p><b>Dimanche</b> de 9h à 12h45</p>
-      </div>
-      
-    </div>
-  </footer>
+        
+        <footer>
+			<hr style="width:100%;"/>
+			<div class="footercontent">
+			<div class="box1">
+				<img src="PLANT' TECHlogo.png" alt="logo" width="200px" style="border-radius:100px;" />
+				<img src="facebook.png" alt="logofacebook" width="40px"/>
+				<img src="instagram.png" alt="logoinstagram" width="40px"/>
+				<img src="twitter.png" alt="logotwitter" width="40px"/>
+			</div>
+
+			<div class="box2">
+			<h3>Contact:</h3>
+			<hr style="width:20%;"/>
+				<p><img src="adress.png" alt="adresse" width="20px" style="vertical-align: middle;"/>
+				20 rue Metmoivingt 31400 TOULOUSE</p>
+				<p><img src="phone.png" alt="téléphone" width="30px" style="vertical-align: middle;"/>
+				01.02.03.04.05</p>
+				<p><img src="mail.png" alt="email" width="30px" style="vertical-align: middle;"/>
+				plantech@free.fr</p>
+			</div>
+
+			<div class="box3">
+			<h3>Horaires:</h3>
+			<hr style="width:20%;"/>
+				<p>Du <b>lundi au vendredi</b> de 8h à 12h puis de 13h à 16h45</p>
+				<p><b>Dimanche</b> de 9h à 12h45</p>
+			</div>
+			
+			</div>
+		</footer>
     </body>
 <html>
