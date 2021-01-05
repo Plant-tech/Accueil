@@ -1,3 +1,49 @@
+body,html{
+    padding:0;
+    margin:0;
+    font-family:'Oxygen', sans-serif;
+}
+
+/* HEADER */
+header {
+    text-align:center;
+    width:100%;
+}
+
+nav a{
+    color:black;
+    font-size:16px;
+    font-weight:bold;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:hover{
+    color:#11763c;
+}
+
+header hr{
+    width:100%;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #6cac20;
+}
+
+.footercontent{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.box1, .box2, .box3{
+  color:white;
+  text-align:center;
+}
+
+
 .gauche {float: left;
 	vertical-align: middle;	
 	margin: 10px;	
