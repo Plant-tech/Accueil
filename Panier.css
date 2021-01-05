@@ -43,6 +43,16 @@ footer{
   text-align:center;
 }
 
+hr{
+    color:#6cac20;
+    width:30%;
+}
+
+a{
+    text-decoration:none;
+
+}
+
 h3{
     color: green;
     text-align: center;
