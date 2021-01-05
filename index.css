@@ -7,29 +7,53 @@ body,html{
     font-family:'Oxygen', sans-serif;
 }
 
-/* HEADER */
+/*Bouton*/
+button{
+    font-size:14px;
+    color:white;
+    height:20%;
+    background-color:#6cac20;
+    border-radius:2px;
+    border:none;
+    box-shadow: 1px 1px 3px black;
+    height:40px;
+    width:120px;
+
+}
+
+button:hover{
+    background-color:#05a44b;
+    cursor:pointer;
+}
+
+/*Lien*/
+a{
+    color:black;
+    text-decoration:none;
+}
+
+a:hover{
+    color:#11763c;
+}
+
+/***** HEADER *****/
 header {
     text-align:center;
     width:100%;
 }
 
 nav a{
-    color:black;
     font-size:16px;
     font-weight:bold;
     text-transform:uppercase;
     letter-spacing: 1px;
 }
 
-nav a:hover{
-    color:#11763c;
-}
-
 header hr{
     width:100%;
 }
 
-/* FOOTER */
+/**** FOOTER ****/
 
 footer{
     background-color: #6cac20;
@@ -46,7 +70,7 @@ footer{
   text-align:center;
 }
 
-/* INDEX */
+/**** INDEX ****/
 
 .container h2, .container p{
     text-align:center;
@@ -57,31 +81,10 @@ hr{
     width:30%;
 }
 
-a{
-    text-decoration:none;
-
-}
-
-button{
+.primary{
     display:block;
     margin-left:auto;
     margin-right:auto;
-
-    font-size:14px;
-    color:white;
-    height:20%;
-    background-color:#6cac20;
-    border-radius:2px;
-    border:none;
-    box-shadow: 1px 1px 3px black;
-    height:40px;
-    width:120px;
-
-}
-
-button:hover{
-    background-color:#05a44b;
-    cursor:pointer;
 }
 
 /* Bannière */
@@ -105,16 +108,14 @@ h1{
     height: 600px;
 }
 
-/* Technologie */
-
 /* Les produits */
-.tproduct{
+.tproduct, .tcharac{
     margin-left:auto;
     margin-right:auto;
     width:100%;
 }
 
-.tproduct td{
+.tproduct td, .tcharac th{
     text-align:center;
     width:500px;
 }
@@ -132,21 +133,42 @@ h1{
     transform: scale(1.1);
 }
 
-
 /* Caractéristiques */
-.tcharac{
-    margin-left:auto;
-    margin-right:auto;
-    width:100%;
-}
-
-.tcharac th{
-    text-align:center;
-    width:500px;
-}
-
 .tcharac img{
     width:200px;
     height:200px;
 }
+
+/**** PRODUIT PAGE INDIVIDUELLE ****/
+
+.prodindiv{
+    border-collapse: collapse;
+    border:2px solid black;
+    margin:30px;
+}
+
+.prodindiv th{
+    background-color:#6cac20;
+    color:white;
+}
+
+.gauche {
+    float: left;
+	vertical-align: middle;	
+    margin: 10px;
+    width:100px; 
+    height:100px;
+
+    box-shadow: 2px 2px 3px #6cac20;
+    border-radius: 90px;
+}
+
+p {
+	text-align: justify;
+}
+
+form {
+	margin: 5px;
+}
+
 
