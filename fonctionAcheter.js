@@ -64,7 +64,7 @@ function AcheterP(e){
 function AcheterA(e){
       alert("le produit va etre ajouté");
       const section = e.target.parentElement.parentElement;
-      alert(section.getElementById("couleurP").value); //element undefined comment recuperrer les couleurs et autres ? 
+      alert(document.getElementById("couleurA").selectedIndex.value); //element undefined comment recuperrer les couleurs et autres ? 
       const enfants=section.childNodes[2];
       const couleurchoisie=document.getElementById("couleurA").selectedIndex.value; // Comment ? get element by id n'est possible que sur tout le doc
       const taillechoisie= document.getElementById("tailleA").selectedIndex.value;  // Il n'y a que avec le pot que cette fonction marche 
@@ -77,7 +77,7 @@ function AcheterA(e){
 function AcheterM(e){
       alert("le produit va etre ajouté");
       const section = e.target.parentElement.parentElement;
-      alert(section.getElementById("couleurP").selectedIndex.value); //element undefined comment recuperrer les couleurs et autres ? 
+      alert(document.getElementById("couleurM").selectedIndex.value); //element undefined comment recuperrer les couleurs et autres ? 
       const enfants=section.childNodes[2];
       const couleurchoisie=document.getElementById("couleurM").selectedIndex.value; // Comment ? get element by id n'est possible que sur tout le doc
       const taillechoisie= document.getElementById("tailleM").selectedIndex.value;  // Il n'y a que avec le pot que cette fonction marche 
