@@ -124,14 +124,12 @@ function AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProd
       subpriceCell.className="soustotal";
       
       // pour la case ProdCell
-      const image=document.createElement("img");
-      image.src=sourceimage;
-      image.alt=nomProd;
-      image.width="10%";
-      ProdCell.appendChild(image);
+
       const div2 = document.createElement("div");
       div2.innerText=nomProd;
-       ProdCell.appendChild(div2);
+      const br=document.createElement("br")
+      ProdCell.appendChild(div2);
+      ProdCell.appendChild(br);
       const div1 = document.createElement("div");
       div1.innerText="Taille : " + taillechoisie +"   "+"couleur : " + couleurchoisie;
       ProdCell.appendChild(div1);
@@ -167,7 +165,7 @@ function AcheterP(e){
       alert("le produit va etre ajouté");
       alert(document.getElementById("couleurP").value);
       const couleurchoisie=document.getElementById("couleurP").value; 
-      const taillechoisie= document.getElementById("tailleP").value;  
+      const taillechoisie= document.getElementById("tailleP").value.tostring;  
       const prixProdU=document.getElementById("prixP").value;
       const sourceimage="pot.png";
       const nomProd = "Pot connecté";
