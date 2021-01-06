@@ -7,6 +7,13 @@ body,html{
     font-family:'Oxygen', sans-serif;
 }
 
+/*Titre*/
+h1{
+    color:green;
+    font-size:35px;
+    text-align:center;
+}
+
 /*Bouton*/
 button{
     font-size:14px;
@@ -88,8 +95,9 @@ hr{
 }
 
 /* Bannière */
-h1{
+.titremenu{
     font-size: 500%;
+    color:black;
     text-shadow: 5px 10px 5px rgba(0,0,0,0.3);
     text-decoration: underline overline solid #80a138;
 
@@ -120,7 +128,7 @@ h1{
     width:500px;
 }
 
-.tproduct img{
+.tproduct img, .conteneur img{
     width:300px;
     height:300px;
     border-radius:200px;
@@ -139,6 +147,40 @@ h1{
     height:200px;
 }
 
+/**** PRODUITS ****/
+input{
+    font-size:14px;
+    color:white;
+    height:20%;
+    background-color:#11763c;
+    border-radius:2px;
+    border:none;
+    box-shadow: 1px 1px 3px black;
+    height:20px;
+    width:140px;
+}
+
+input:hover{
+    background-color:#6cac20;
+    cursor:pointer;
+}
+
+select{    
+    display:inline;
+    margin-left:auto;
+    margin-right:auto;
+
+    font-size:16px;
+    color:black;
+    height:20%;
+    background-color:white;
+    border-radius:2px;
+    border:none;
+    box-shadow: 1px 1px 1px black;
+    widows: 150px;
+} 
+
+
 /**** PRODUIT PAGE INDIVIDUELLE ****/
 
 .prodindiv{
@@ -152,7 +194,7 @@ h1{
     color:white;
 }
 
-.gauche {
+.indiv {
     float: left;
 	vertical-align: middle;	
     margin: 10px;
@@ -169,6 +211,17 @@ p {
 
 form {
 	margin: 5px;
+}
+
+/**** NOTRE EQUIPE ****/
+.who{
+    column-count:2;
+    colmn-gap:"30px"
+} 
+
+ul{ 
+    text-align: center;
+    list-style:none
 }
 
 
