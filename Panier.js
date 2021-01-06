@@ -129,10 +129,8 @@ function AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU) {
       // pour la case de suppression
       
       const removeButton=document.createElement("button");
-      removeButton.className="bonton boutonblanc";
+      removeButton.className="bouton boutonblanc";
       removeButton.id="removeBouton";
-      removeButton.onclick="remove()";
-      removeButton.type="button";
       removeButton.innerText="Supprimer";
       quantityCell.appendChild(removeButton);
       
