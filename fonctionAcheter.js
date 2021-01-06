@@ -9,7 +9,7 @@ function AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProd
       const row = document.createElement("tr");
       const ProdCell = document.createElement("td");
       const quantityCell = document.createElement("td");
-      const subprice = document.createElement("td");
+      const subpriceCell = document.createElement("td");
       row.className="ligneProduit";
       subprice.className="soustotal";
       
@@ -64,7 +64,7 @@ function AcheterP(e){
 function AcheterA(e){
       alert("le produit va etre ajouté");
       const section = e.target.parentElement.parentElement;
-      alert(section.getElementsByTagName("couleurP").innerText); //element undefined comment recuperrer les couleurs et autres ? 
+      alert(section.getElementById("couleurP").innerText); //element undefined comment recuperrer les couleurs et autres ? 
       const enfants=section.childNodes[2];
       const couleurchoisie=document.getElementById("couleurA").selectedIndex.innerText; // Comment ? get element by id n'est possible que sur tout le doc
       const taillechoisie= document.getElementById("tailleA").selectedIndex.innerText;  // Il n'y a que avec le pot que cette fonction marche 
@@ -77,7 +77,7 @@ function AcheterA(e){
 function AcheterM(e){
       alert("le produit va etre ajouté");
       const section = e.target.parentElement.parentElement;
-      alert(section.getElementsByTagName("couleurP").selectedIndex.innerText); //element undefined comment recuperrer les couleurs et autres ? 
+      alert(section.getElementById("couleurP").selectedIndex.innerText); //element undefined comment recuperrer les couleurs et autres ? 
       const enfants=section.childNodes[2];
       const couleurchoisie=document.getElementById("couleurM").selectedIndex.innerText; // Comment ? get element by id n'est possible que sur tout le doc
       const taillechoisie= document.getElementById("tailleM").selectedIndex.innerText;  // Il n'y a que avec le pot que cette fonction marche 
