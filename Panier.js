@@ -50,6 +50,7 @@ function remove(){
 
 panier.addEventListener("change", RechargePanier);
 
+//Ajouter au panier
 
 const boutonAcheterP = document.getElementById("boutonAcheterP");
 const boutonAcheterA = document.getElementById("boutonAcheterA");
@@ -104,10 +105,10 @@ function AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProd
 function AcheterP(e){
       alert("le produit va etre ajouté");
       const section = e.target.parentElement.parentElement;
-      alert(document.getElementById("couleurP").value); //element undefined comment recuperrer les couleurs et autres ? 
+      alert(document.getElementById("couleurP").value);
       const enfants=section.childNodes[2];
-      const couleurchoisie=document.getElementById("couleurP").value; // Comment ? get element by id n'est possible que sur tout le doc
-      const taillechoisie= document.getElementById("tailleP").value;  // Il n'y a que avec le pot que cette fonction marche 
+      const couleurchoisie=document.getElementById("couleurP").value; 
+      const taillechoisie= document.getElementById("tailleP").value;  
       const prixProdU=document.getElementById("prixP").value;
       const sourceimage= enfants.src;
       const nomProd = section.firstChild.innertText;
@@ -117,10 +118,10 @@ function AcheterP(e){
 function AcheterA(e){
       alert("le produit va etre ajouté");
       const section = e.target.parentElement.parentElement;
-      alert(document.getElementById("couleurA").selectedIndex.value); //element undefined comment recuperrer les couleurs et autres ? 
+      alert(document.getElementById("couleurA").value); 
       const enfants=section.childNodes[2];
-      const couleurchoisie=document.getElementById("couleurA").value; // Comment ? get element by id n'est possible que sur tout le doc
-      const taillechoisie= document.getElementById("tailleA").value;  // Il n'y a que avec le pot que cette fonction marche 
+      const couleurchoisie=document.getElementById("couleurA").value; 
+      const taillechoisie= document.getElementById("tailleA").value;  
       const prixProdU=document.getElementById("prixP").value;
       const sourceimage= enfants.src;
       const nomProd = section.firstChild.innertText;
@@ -130,10 +131,10 @@ function AcheterA(e){
 function AcheterM(e){
       alert("le produit va etre ajouté");
       const section = e.target.parentElement.parentElement;
-      alert(document.getElementById("couleurM").value); //element undefined comment recuperrer les couleurs et autres ? 
+      alert(document.getElementById("couleurM").value); 
       const enfants=section.childNodes[2];
-      const couleurchoisie=document.getElementById("couleurM").value; // Comment ? get element by id n'est possible que sur tout le doc
-      const taillechoisie= "Taille unique";  // Il n'y a que avec le pot que cette fonction marche 
+      const couleurchoisie=document.getElementById("couleurM").value; 
+      const taillechoisie= "Taille unique"; 
       const prixProdU=document.getElementById("prixM").value;
       const sourceimage= enfants.src;
       const nomProd = section.firstChild.innertText;
