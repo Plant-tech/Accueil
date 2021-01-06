@@ -76,14 +76,6 @@ function RechargePanier(){
         paniervide.style.visibility='hidden';
     }
 
-    // cacul prix par quantité de produits
-    
-    let j=0;
-    for (j=0; j<soustot.length; j++){
-        soustot[j].innerHTML = 5 * parseFloat(quantite[j].value); //a modifier pour mettre le prix unitaire 
-        soustot[j].innerHTML += "euros";
-    }
-
     // calcul total produits
 
     var t=0;
@@ -130,6 +122,7 @@ function AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProd
       const br=document.createElement("br")
       ProdCell.appendChild(div2);
       ProdCell.appendChild(br);
+      ProdCell.appendChild(br);
       const div1 = document.createElement("div");
       div1.innerText="Taille : " + taillechoisie +"   "+"couleur : " + couleurchoisie;
       ProdCell.appendChild(div1);
@@ -157,7 +150,6 @@ function AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProd
       row.appendChild(quantityCell);
       row.appendChild(subpriceCell);
       panier.appendChild(row);
-      alert("le produit a ete ajouté effectivement");
 }
 
 
@@ -186,10 +178,9 @@ function AcheterA(e){
 function AcheterM(e){
       alert("le produit va etre ajouté");
       alert(document.getElementById("couleurM").value); 
-      const couleurchoisie=document.getElementById("couleurM").value; 
-      const taillechoisie= "Taille unique"; 
+      string couleurchoisie=document.getElementById("couleurM").value; 
+      string taillechoisie= "Taille unique"; 
       const prixProdU=document.getElementById("prixM").value;
-      const sourceimage= "musicaplante.jpeg";
       const nomProd = "Musicaplante";
       AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProdU);
 }
