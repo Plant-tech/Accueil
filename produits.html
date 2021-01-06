@@ -3,15 +3,19 @@
     <head>
         <meta charset="UTF-8"/>
 		<title>Nos produits</title>
-	      <link rel="preconnect" href="https://fonts.gstatic.com">
-                <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" media="screen" href="styles.css" type="text/css"/>
-		<style>
-            .content{
-                column-count:3;
-                column-gap:60px;
-            } 
-        </style>
+
+		<!--Lien JS-->
+		<script defer src="code.js"></script>
+			<script defer src="fonctionAcheter.js"></script>
+
+		<!--Font-->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet"> 
+
+		<!--Lien CSS-->
+		<link rel="stylesheet" type="text/css" href="index.css">
+
+
     </head>
 
     <body>
@@ -25,7 +29,7 @@
   </nav>
   <hr/>
 </header>
-        <main>
+        <main style="text-align:center;">
 			<h1>Nos produits</h1>
 			<p style="text-align:center;">
 				Voici nos différents produits : nous vous proposons des pots connectés qui savent détecter les besoins de vos plantes (taille et couleur au choix),
@@ -34,9 +38,10 @@
 			</p>
 			<section id="pot">
 				<h2 class="titreProduit">Pot connecté</h2>
+				<hr style="width:10%">
 				<h3 class="prix">De 10€ à 40€ selon la taille</h3>
 				<div class="conteneur">
-					<a href="pot.html"><img class="gauche" src="pot.png" width=150 height=150 alt="pot connecté"></a> <!-- à aligner avec le haut du texte à droite-->
+					<img class="gauche" src="pot.png" width=150 height=150 alt="pot connecté"> <!-- à aligner avec le haut du texte à droite-->
 					<p>Cet incroyable pot connecté vous permettra de connaître les besoins de vos plantes. Le visage s'affichant sur le pot
 						change en fonction de l'humidité et de la densité de la terre ce qui vous permet de savoir quand arroser vos plantes.
 						Le pot peut également détecter quand les racines prennent trop de place et vous indique donc quand rempoter vos plantes.
@@ -47,17 +52,34 @@
 					<form target="popup" action="pot.html" onsubmit="window.open('', this.target,'width=400,height=400,scrollbars=yes,location=no,menubar=no,toolbar=no'); return true;">
 						<input type="submit" value="Plus d'informations"/>
 					</form>
-					
-					<button type="button"><a href="Panier.html">Ajouter au panier</a></button>
+					<br>
+					<form id="listetailleP" name="listes">
+						<select name="tailleP" id="tailleP" onChange="changeSizeP(this.value)">
+							<option value="">Choisir...</option>
+							<option value="A">9 cm</option>
+							<option value="B">12 cm</option>
+							<option value="C">15 cm</option>
+							<option value="D">20 cm</option>
+							<option value="E">30 cm</option>
+						</select>
+						<select name="couleurP" id="couleurP">
+							<option value="" disabled selected>Choisir...</option>
+						</select>
+						<select name="prixP" id="prixP">
+							<option value="" disabled selected>Prix de l'article</option>
+						</select>
+					</form>
+					<button type="button" id="boutonAcheterP">Ajouter au panier</button>
 				</div>
 			</section>
 			<br>
 			<br>
 			<section id="arrosoir">
 				<h2 class="titreProduit">Arrosoir connecté</h2>
+				<hr style="width:10%">
 				<h3 class="prix">De 20€ à 30€ selon la taille</h3>
 				<div class="conteneur">
-					<a href="arrosoir.html"><img class="gauche" src="arrosoir.jpeg" width=150 height=150 alt="arrosoir connecté"></a>
+					<img class="gauche" src="arrosoir.jpeg" width=150 height=150 alt="arrosoir connecté">
 					<p>Cet incroyable système d'arrosage connecté vous permettra de donner le volume d'eau exact dont vos plantes ont besoin.
 						Il vous suffira de sélectionner le volume d'eau nécéssaire à votre plante et le systèmme se chargera de l'arroser automatiquement, 
 						de façon preogressive afin d'éviter les excès d'eau, qui sont la 1e cause de mortalité chez les plantes domestiques.
@@ -68,17 +90,32 @@
 					<form target="popup" action="arrosoir.html" onsubmit="window.open('', this.target,'width=400,height=400,scrollbars=yes,location=no,menubar=no,toolbar=no'); return true;">						
 						<input type="submit" value="Plus d'informations"/>
 					</form>
-						
-					<button type="button"><a href="Panier.html">Ajouter au panier</a></button>
+					<br>
+					<form id="listetailleA" name="listes">
+						<select name="tailleA" id="tailleA" onChange="changeSize(this.value)">
+							<option value="">Choisir...</option>
+							<option value="F">50cl</option>
+							<option value="G">1L</option>
+							<option value="H">1.5L</option>
+						</select>
+						<select name="couleurA" id="couleurA">
+							<option value="" disabled selected>Choisir...</option>
+						</select>
+						<select name="prixA" id="prixA">
+							<option value="" disabled selected>Prix de l'article</option>
+						</select>
+					</form>	
+					<button type="button" id="boutonAcheterA">Ajouter au panier</button>
 				</div>
 			</section>
 			<br>
 			<br>
 			<section id="musicaplante">
 				<h2 class="titreProduit">Musicaplante</h2>
+				<hr style="width:10%">
 				<h3 class="prix">100€</h3>
 				<div class="conteneur">
-					<a href="musicaplante.html"><img class="gauche" src="musicaplante.jpeg" width=150 height=150 alt="musicaplante"></a> 
+					<img class="gauche" src="musicaplante.jpeg" width=150 height=150 alt="musicaplante">
 					<p>Cet incroyable musicaplante vous permettra de connaître mieux vos plantes. Il suffit simplement de le planter dans le terreau de vos plantes, et il
 						analysera les ondes qu'elles émettent. Le détecteur vous informe ensuite de leur humeur et de leurs besoins. Avec notre détecteur, vous ne tuerez plus aucune 
 						de vos plantes !
@@ -88,40 +125,52 @@
 					<form target="popup" action="musicaplante.html" onsubmit="window.open('', this.target,'width=400,height=400,scrollbars=yes,location=no,menubar=no,toolbar=no'); return true;">
 						<input type="submit" value="Plus d'informations"/>
 					</form>
-					
-					<button type="button"><a href="Panier.html">Ajouter au panier</a></button>
+					<br>
+					<form id="listeCouleursM" name="listes">
+						<select name="CouleurM" id="CouleurM">
+							<option value="">Choisir...</option>
+							<option value="I">Noir</option>
+							<option value="J">Chrome</option>
+							<option value="K">Blanc</option>
+						</select>
+						<select name="prixM" id="prixM">
+							<option value="">100€</option>
+						</select>
+					</form>	
+					<button type="button" id="boutonAcheterM">Ajouter au panier</button>
 				</div>
 				<br>
 			</section>
-        </main>
-<footer>
-    <hr style="width:100%;"/>
-    <div class="footercontent">
-      <div class="box1">
-        <img src="PLANT' TECHlogo.png" alt="logo" width="200px" style="border-radius:100px;"/>
-        <a href="https://www.facebook.com/INSAToulouse"><img src="facebook.png" alt="logofacebook" width="40px"/></a>
-        <a href="https://www.instagram.com/insatoulouse/"><img src="instagram.png" alt="logoinstagram" width="40px"/></a>
-        <a href="https://twitter.com/INSAToulouse?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="twitter.png" alt="logotwitter" width="40px"/></a>
-      </div>
+		</main>
 
-      <div class="box2">
-       <h3>Contact:</h3>
-       <hr style="width:20%;"/>
-        <a href="https://www.google.fr/maps/place/20+Rue+du+Lierre,+31300+Toulouse/@43.5927856,1.4253256,17z/data=!3m1!4b1!4m5!3m4!1s0x12aebb744af914fb:0x97e148fffc8e9695!8m2!3d43.5927856!4d1.4275143"><p><img src="adress.png" alt="adresse" width="20px" style="vertical-align: middle;"/>
-          20 rue du Lierre 31400 TOULOUSE</p></a>
-        <p><img src="phone.png" alt="téléphone" width="30px" style="vertical-align: middle;"/>
-         01.02.03.04.05</p>
-        <p><img src="mail.png" alt="email" width="30px" style="vertical-align: middle;"/>
-         plantech@free.fr</p>
-      </div>
-      <div class="box3">
-       <h3>Horaires:</h3>
-       <hr style="width:20%;"/>
-        <p>Du <b>lundi au vendredi</b> de 8h à 12h puis de 13h à 16h45</p>
-        <p><b>Dimanche</b> de 9h à 12h45</p>
-      </div>
-      
-    </div>
-  </footer>
+		
+		<footer>
+			<hr style="width:100%;"/>
+			<div class="footercontent">
+			<div class="box1">
+				<img src="PLANT' TECHlogo.png" alt="logo" width="200px" style="border-radius:100px;" />
+				<img src="facebook.png" alt="logofacebook" width="40px"/>
+				<img src="instagram.png" alt="logoinstagram" width="40px"/>
+				<img src="twitter.png" alt="logotwitter" width="40px"/>
+			</div>
+			<div class="box2">
+			<h3>Contact:</h3>
+			<hr style="width:20%;"/>
+				<p><img src="adress.png" alt="adresse" width="20px" style="vertical-align: middle;"/>
+				20 rue du Lierre 31400 TOULOUSE</p>
+				<p><img src="phone.png" alt="téléphone" width="30px" style="vertical-align: middle;"/>
+				01.02.03.04.05</p>
+				<p><img src="mail.png" alt="email" width="30px" style="vertical-align: middle;"/>
+				plantech@free.fr</p>
+			</div>
+			<div class="box3">
+			<h3>Horaires:</h3>
+			<hr style="width:20%;"/>
+				<p>Du <b>lundi au vendredi</b> de 8h à 12h puis de 13h à 16h45</p>
+				<p><b>Dimanche</b> de 9h à 12h45</p>
+			</div>
+			
+			</div>
+		</footer>
     </body>
 </html>
