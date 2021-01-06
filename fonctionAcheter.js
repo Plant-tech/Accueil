@@ -5,7 +5,7 @@ const boutonAcheterM = document.getElementById("boutonAcheterM");
 const panier2=document.getElementById("panier");
 
 function AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProdU) {
-
+      let panier2=document.getElementById("panier");
       const row = document.createElement("tr");
       const ProdCell = document.createElement("td");
       const quantityCell = document.createElement("td");
