@@ -55,7 +55,7 @@ function AcheterP(e){
       const enfants=section.childNodes[2];
       const couleurchoisie=document.getElementById("couleurP").selectedIndex.innerText; // Comment ? get element by id n'est possible que sur tout le doc
       const taillechoisie= document.getElementById("tailleP").selectedIndex.innerText;  // Il n'y a que avec le pot que cette fonction marche 
-      const prixProdU=section.getElementById("prixP").selectedIndex.innerText;
+      const prixProdU=document.getElementById("prixP").selectedIndex.innerText;
       const sourceimage= enfants.src;
       const nomProd = section.firstChild.innertText;
       AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProdU);
@@ -68,7 +68,7 @@ function AcheterA(e){
       const enfants=section.childNodes[2];
       const couleurchoisie=document.getElementById("couleurA").selectedIndex.innerText; // Comment ? get element by id n'est possible que sur tout le doc
       const taillechoisie= document.getElementById("tailleA").selectedIndex.innerText;  // Il n'y a que avec le pot que cette fonction marche 
-      const prixProdU=section.getElementById("prixP").selectedIndex.innerText;
+      const prixProdU=document.getElementById("prixP").selectedIndex.innerText;
       const sourceimage= enfants.src;
       const nomProd = section.firstChild.innertText;
       AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProdU);
@@ -77,11 +77,11 @@ function AcheterA(e){
 function AcheterM(e){
       alert("le produit va etre ajouté");
       const section = e.target.parentElement.parentElement;
-      alert(section.getElementsByTagName("couleurP").innerText); //element undefined comment recuperrer les couleurs et autres ? 
+      alert(section.getElementsByTagName("couleurP").selectedIndex.innerText); //element undefined comment recuperrer les couleurs et autres ? 
       const enfants=section.childNodes[2];
       const couleurchoisie=document.getElementById("couleurM").selectedIndex.innerText; // Comment ? get element by id n'est possible que sur tout le doc
       const taillechoisie= document.getElementById("tailleM").selectedIndex.innerText;  // Il n'y a que avec le pot que cette fonction marche 
-      const prixProdU=section.getElementById("prixM").selectedIndex.innerText;
+      const prixProdU=document.getElementById("prixM").selectedIndex.innerText;
       const sourceimage= enfants.src;
       const nomProd = section.firstChild.innertText;
       AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProdU);
