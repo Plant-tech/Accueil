@@ -105,7 +105,7 @@ const boutonAcheterA = document.getElementById("boutonAjouterA");
 const boutonAcheterM = document.getElementById("boutonAjouterM");
 
 
-function AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProdU) {
+function AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU) {
       
       const row = document.createElement("tr");
       const ProdCell = document.createElement("td");
@@ -126,20 +126,14 @@ function AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProd
       div1.innerText="Taille : " + taillechoisie +"   "+"couleur : " + couleurchoisie;
       ProdCell.appendChild(div1);
       
-      // pour la case de quantité
-      const q= document.createElement("input");
-      q.className="quantity";
-      q.type="number";
-      q.value="1";
-      q.min="1";
-      quantityCell.appendChild(q);
+      // pour la case de suppression
       
       const removeButton=document.createElement("button");
       removeButton.className="bonton boutonblanc";
       removeButton.id="removeBouton";
       removeButton.onclick="remove()";
       removeButton.type="button";
-      removeButton.innerText="Remove";
+      removeButton.innerText="Supprimer";
       quantityCell.appendChild(removeButton);
       
       //pour la case subprice
