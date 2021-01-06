@@ -4,6 +4,11 @@ body,html{
     font-family:'Oxygen', sans-serif;
 }
 
+h1{font-size:35px;
+    color:green;
+    text-align:center;
+}
+
 /* HEADER */
 header {
     text-align:center;
