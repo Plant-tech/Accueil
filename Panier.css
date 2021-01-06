@@ -56,7 +56,7 @@ a{
 h3{
     color: green;
     text-align: center;
-    font-size:35px;}
+    font-size:35px;
 } 
 table : td {
     text-align: center;
@@ -127,3 +127,72 @@ table : td {
 #removeBouton{
     margin: auto;
 } 
+
+
+
+.bouton {
+    display:block;
+    width:100px;
+    line-height:25px;
+    text-align:center;
+    vertical-align:middle;
+    border-radius: 8px;
+}
+
+.boutonvert{
+    
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    
+        font-size:18px;
+        color:white;
+        height:20%;
+        background-color:#6cac20;
+        border-radius:2px;
+        border:none;
+        box-shadow: 1px 1px 3px black;
+        height:40px;
+        width:120px;
+    
+    }
+    
+.boutonvert:hover{
+        background-color:#05a44b;
+        cursor:pointer;
+    }
+
+} 
+
+.boutonblanc{
+    background-color:white;
+    color:grey;
+    text-decoration:none;
+    border-color: grey;
+    border-collapse: collapse;
+} 
+
+#boutonValidation{
+    width:200px;
+    line-height:50px;
+} 
+#boutonValidation a {
+    color: white;
+    text-decoration: none;
+} 
+
+
+.quantity {
+    text-align: center;
+} 
+#removeBouton{
+    margin: auto;
+} 
+
+.tableauProduits th{   
+    background-color:#6cac20;
+    color:white;} 
+
+.tableauProduits{border-collapse: collapse;
+    border:2px solid black;
+    margin:30px;} 
