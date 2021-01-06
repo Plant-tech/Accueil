@@ -109,8 +109,8 @@ panier.addEventListener("change", RechargePanier);
 
 //Ajouter au panier
 
-const boutonAcheterP = document.getElementById("boutonAjouterp");
-const boutonAcheterA = document.getElementById("boutonAjouterp");
+const boutonAcheterP = document.getElementById("boutonAjouterP");
+const boutonAcheterA = document.getElementById("boutonAjouterA");
 const boutonAcheterM = document.getElementById("boutonAjouterM");
 
 
