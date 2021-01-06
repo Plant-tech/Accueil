@@ -109,9 +109,9 @@ panier.addEventListener("change", RechargePanier);
 
 //Ajouter au panier
 
-const boutonAcheterP = document.getElementById("boutonAcheterP");
-const boutonAcheterA = document.getElementById("boutonAcheterA");
-const boutonAcheterM = document.getElementById("boutonAcheterM");
+const boutonAcheterP = document.getElementById("boutonAjouterp");
+const boutonAcheterA = document.getElementById("boutonAjouterp");
+const boutonAcheterM = document.getElementById("boutonAjouterM");
 
 
 function AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProdU) {
