@@ -2,9 +2,8 @@
 const boutonAcheterP = document.getElementById("boutonAcheterP");
 const boutonAcheterA = document.getElementById("boutonAcheterA");
 const boutonAcheterM = document.getElementById("boutonAcheterM");
-if (panier) {
-const panier=document.getElementById("panier");
-}
+const panier2=document.getElementById("panier");
+
 function AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProdU) {
 
       const row = document.createElement("tr");
@@ -44,8 +43,8 @@ function AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProd
       row.appendChild(ProdCell);
       row.appendChild(quantityCell);
       row.appendChild(subpriceCell);
-      panier.appendChild(row);
-      alert("le produit a ete ajouté");
+      panier2.appendChild(row);
+      alert("le produit a ete ajouté effectivement");
 }
 
 
