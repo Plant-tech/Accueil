@@ -51,7 +51,7 @@ function AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProd
 function AcheterP(e){
       alert("le produit va etre ajouté");
       const section = e.target.parentElement.parentElement;
-      alert(section.getElementsByTagName("couleurP").innerText); //element undefined comment recuperrer les couleurs et autres ? 
+      alert(document.getElementById("couleurP").selectedIndex.innerText); //element undefined comment recuperrer les couleurs et autres ? 
       const enfants=section.childNodes[2];
       const couleurchoisie=document.getElementById("couleurP").selectedIndex.innerText; // Comment ? get element by id n'est possible que sur tout le doc
       const taillechoisie= document.getElementById("tailleP").selectedIndex.innerText;  // Il n'y a que avec le pot que cette fonction marche 
