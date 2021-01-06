@@ -2,8 +2,9 @@
 const boutonAcheterP = document.getElementById("boutonAcheterP");
 const boutonAcheterA = document.getElementById("boutonAcheterA");
 const boutonAcheterM = document.getElementById("boutonAcheterM");
+if (panier) {
 const panier=document.getElementById("panier");
-alert(Panier);
+}
 function AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProdU) {
 
       const row = document.createElement("tr");
