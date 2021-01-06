@@ -167,20 +167,18 @@ function AcheterP(e){
       const taillechoisie= document.getElementById("tailleP").value;  
       const prixProdU=document.getElementById("prixP").value;
       const sourceimage="pot.png";
-      const nomProd = section.firstChild.innertText;
+      const nomProd = "Pot connecté";
       AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProdU);
 }
 
 function AcheterA(e){
       alert("le produit va etre ajouté");
-      const section = e.target.parentElement.parentElement;
       alert(document.getElementById("couleurA").value); 
-      const enfants=section.childNodes[2];
       const couleurchoisie=document.getElementById("couleurA").value; 
       const taillechoisie= document.getElementById("tailleA").value;  
       const prixProdU=document.getElementById("prixP").value;
       const sourceimage= "arrosoir.jpeg";
-      const nomProd = section.firstChild.innertText;
+      const nomProd ="Arrosoir";
       AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProdU);
 }
 
@@ -193,7 +191,7 @@ function AcheterM(e){
       const taillechoisie= "Taille unique"; 
       const prixProdU=document.getElementById("prixM").value;
       const sourceimage= "musicaplante.jpeg";
-      const nomProd = section.firstChild.innertText;
+      const nomProd = "Musicaplante";
       AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProdU);
 }
 
