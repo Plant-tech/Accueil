@@ -129,9 +129,12 @@ function AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProd
       image.alt=nomProd;
       image.width="10%";
       ProdCell.appendChild(image);
-      const div = document.createElement("div");
-      div.innerText="Taille : "+ taillechoisie+"couleur : " + couleurchoisie;
-      ProdCell.appendChild(div);
+      const div2 = document.createElement("div");
+      div2.innerText=nomProd;
+       ProdCell.appendChild(div2);
+      const div1 = document.createElement("div");
+      div1.innerText="Taille : " + (string)taillechoisie +"   "+"couleur : " + (string)couleurchoisie;
+      ProdCell.appendChild(div1);
       
       // pour la case de quantité
       const q= document.createElement("input");
