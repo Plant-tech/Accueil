@@ -81,7 +81,7 @@ function AcheterM(e){
       alert(document.getElementById("couleurM").value); //element undefined comment recuperrer les couleurs et autres ? 
       const enfants=section.childNodes[2];
       const couleurchoisie=document.getElementById("couleurM").value; // Comment ? get element by id n'est possible que sur tout le doc
-      const taillechoisie= document.getElementById("tailleM").value;  // Il n'y a que avec le pot que cette fonction marche 
+      const taillechoisie= "Taille unique";  // Il n'y a que avec le pot que cette fonction marche 
       const prixProdU=document.getElementById("prixM").value;
       const sourceimage= enfants.src;
       const nomProd = section.firstChild.innertText;
