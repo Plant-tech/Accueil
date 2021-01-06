@@ -160,9 +160,7 @@ function AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProd
 
 function AcheterP(e){
       alert("le produit va etre ajouté");
-      const section = e.target.parentElement.parentElement;
       alert(document.getElementById("couleurP").value);
-      const enfants=section.childNodes[2];
       const couleurchoisie=document.getElementById("couleurP").value; 
       const taillechoisie= document.getElementById("tailleP").value;  
       const prixProdU=document.getElementById("prixP").value;
@@ -184,9 +182,7 @@ function AcheterA(e){
 
 function AcheterM(e){
       alert("le produit va etre ajouté");
-      const section = e.target.parentElement.parentElement;
       alert(document.getElementById("couleurM").value); 
-      const enfants=section.childNodes[2];
       const couleurchoisie=document.getElementById("couleurM").value; 
       const taillechoisie= "Taille unique"; 
       const prixProdU=document.getElementById("prixM").value;
