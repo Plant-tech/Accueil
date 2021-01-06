@@ -96,8 +96,7 @@ function AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProd
       row.appendChild(ProdCell);
       row.appendChild(quantityCell);
       row.appendChild(subpriceCell);
-      let panier2=document.getElementById("panier");
-      panier2.appendChild(row);
+      panier.appendChild(row);
       alert("le produit a ete ajouté effectivement");
 }
 
