@@ -38,7 +38,7 @@ function AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProd
       quantityCell.appendChild(removeButton);
       
       //pour la case subprice
-      subprice.innerText= prixProdU;
+      subpriceCell.innerText= prixProdU;
       
       row.appendChild(ProdCell);
       row.appendChild(quantityCell);
