@@ -133,7 +133,7 @@ function AjouterPanier(nomProd,sourceimage,couleurchoisie,taillechoisie,prixProd
       div2.innerText=nomProd;
        ProdCell.appendChild(div2);
       const div1 = document.createElement("div");
-      div1.innerText="Taille : " + (string)taillechoisie +"   "+"couleur : " + (string)couleurchoisie;
+      div1.innerText="Taille : " + taillechoisie +"   "+"couleur : " + couleurchoisie;
       ProdCell.appendChild(div1);
       
       // pour la case de quantité
