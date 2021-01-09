@@ -142,6 +142,7 @@ function AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU) {
       row.appendChild(removeCell);
       row.appendChild(subpriceCell);
       alert("le produit a été ajouté");
+      RechargePanier();
 }
 
 
