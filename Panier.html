@@ -37,12 +37,30 @@
 	</article>
 	<br><br>	
         
+	<article id="resumePanier" style="display : inline;">
+      	
+            <table class="tableauProduits" id="panier" border="1px">
+                <tr>
+                    <th colspan="2">Produits</th>
+                    <th> Sous-total </th>
+                </tr>
+		    
+                <tr>
+			<td colspan="2"> TOTAL </td>
+                	<td id="total" value="0 euros"> </td>
+                </tr>
+            </table>
+
+            <br><br>
 		
+            <button class="bouton boutonvert" id="boutonValidation"><a  href="Formulaire.html">Valider mon panier</a> </button>
+
+        </article>
 	
 		
         <article id="partieProd" >
 		<ol id="listeProd" >
-		<li style="display : inline;">
+		<li>
 			<a href="pot.html"><img class="pot" src="./images/pot.png" alt="pot-connecté" width="10%"/></a>
 			<h5>Pot connecté</h5>
 			 <form id="listetailleP" name="listes">
@@ -65,7 +83,7 @@
 			<br><br>
 		</li>
 
-		<li style="display : inline;">
+		<li>
 			<a href="arrosoir.html"><img class="arrosoir" src="./images/arrosoir.jpeg" alt="arrosoir" width="10%" /></a>
 		<h5>Arrosoir connecté</h5>
 			<form id="listetailleA" name="listes">
@@ -86,7 +104,7 @@
 			<br><br>
 		</li>
 
-		<li style="display : inline;">
+		<li>
 			<a href="musicaplante.html"><img class="musicaplante" src="./images/musicaplante.jpeg" alt="enceinte" width="10%"/></a>
 		<h5>Musicaplante</h5>
 			<form id="listeCouleursM" name="listes">
@@ -108,25 +126,7 @@
             
 	    </article>
 
-	<article id="resumePanier" style="display : inline;">
-      	
-            <table class="tableauProduits" id="panier" border="1px">
-                <tr>
-                    <th colspan="2">Produits</th>
-                    <th> Sous-total </th>
-                </tr>
-		    
-                <tr>
-			<td colspan="2"> TOTAL </td>
-                	<td id="total" value="0 euros"> </td>
-                </tr>
-            </table>
-
-            <br><br>
-		
-            <button class="bouton boutonvert" id="boutonValidation"><a  href="Formulaire.html">Valider mon panier</a> </button>
-
-        </article>
+	
         
         
     </section>      
