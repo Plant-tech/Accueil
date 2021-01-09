@@ -92,7 +92,12 @@ table : td {
 #AjouterPanier {
     display : flex;
 }
-
+#resumePanier {
+    width : 60%;
+}
+#partieProd {
+    width : 40%;
+}
 
 .bouton {
     display:block;
