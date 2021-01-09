@@ -13,6 +13,22 @@
             column-gap:60px;
         } 
     </style>
+    
+    <script>
+        const nom=document.getElementById("nom").value;
+        const prenom=document.getElementById("prenom").value;
+        const email=document.getElementById("email").value;
+        const adresse=document.getElementById("adresse").value;
+        const ville=document.getElementById("ville").value;
+        const codepostal=document.getElementById("codepostal").value;
+        
+        function Confirmer(){
+            if (nom && prenom && adresse &&email && codepostal && ville) {
+                alert("Veuillez remplir tous les champs !");
+            } else {
+                alert("Vous recevrez un mail à l'adresse ",email, " avec le montant de la facture et un lien de paiement. Merci de votre achat !");
+            }
+          
 
 </head>
     
@@ -32,22 +48,22 @@
     <h2 id="titreformulaire">Informations de livraison</h2>
     <br>
     <label for="nom">Nom : </label>
-    <input type="text" name="nom">
+    <input type="text" name="nom" id="nom">
     <br><br>
     <label for="prenom">Prénom : </label>
-    <input type="text" name="prenom">
+    <input type="text" name="prenom" id="prenom">
     <br><br>
     <label for="email">Email : </label>
-    <input type="text" name="email">
+    <input type="text" name="email" id="email">
     <br><br>
     <label for="adresse">Adresse : </label>
-    <input type="text" name="name">
+    <input type="text" name="adresse" id="adresse">
     <br><br>
     <label for="codepostal">Code Postal : </label>
-    <input type="text" name="codepostal">
+    <input type="text" name="codepostal" id="codepostal">
     <br><br>
     <label for="ville">Ville : </label>
-    <input type="text" name="ville">
+    <input type="text" name="ville" id="ville">
     <br><br>
     
     
@@ -63,7 +79,7 @@
     </div>
     <br><br>
 
-    <button type="button" class="bouton boutonvert" id="confirmation">Confirmation</button>
+    <button type="button" class="bouton boutonvert" id="confirmation" onclick="Confirmer()">Confirmation</button>
    
 <footer>
     <hr style="width:100%;"/>
