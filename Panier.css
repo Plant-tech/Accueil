@@ -87,6 +87,10 @@ table : td {
     margin: auto;
 }
 
+#AjouterPanier {
+    display : flex;
+}
+
 .bouton {
     display:block;
     width:100px;
