@@ -57,7 +57,7 @@ function changeSizeP(value) {
 function getTailleP(v) {
 	if (v=="A"){
 		return "9 cm";
-	} else if (v=="B"){
+	}else if (v=="B"){
 		return "12 cm";
 	}else if (v=="C"){
 		return "15 cm";
