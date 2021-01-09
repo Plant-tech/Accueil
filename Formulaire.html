@@ -24,12 +24,13 @@
                 const adresse=document.getElementById("adresse").value;
                 const ville=document.getElementById("ville").value;
                 const codepostal=document.getElementById("codepostal").value;
-                if (nom && prenom && adresse &&email && codepostal && ville) {
+                if (nom=="" && prenom=="" && adresse=="" && email=="" && codepostal=="" && ville=="") {
                     alert("Veuillez remplir tous les champs !");
                 } else {
                     alert("Vous recevrez un mail à l'adresse ",email, " avec le montant de la facture et un lien de paiement. Merci de votre achat !");
                 }
-        });}
+        });
+        }
     </script>
 
 </head>
