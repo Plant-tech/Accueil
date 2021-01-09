@@ -149,7 +149,7 @@ function AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU) {
 function AcheterP(e){
       alert("le produit va etre ajouté");
       const couleurchoisie=document.getElementById("couleurP").value; 
-      const taillechoisie= document.getElementById("tailleP").selectedIndex.innerHTML;  
+      const taillechoisie= document.getElementById("tailleP").innerHTML.selectedIndex;  
       const prixProdU=document.getElementById("prixP").value;
       const nomProd = "Pot connecté";
  	alert(nomProd,couleurchoisie,taillechoisie,prixProdU);
@@ -169,7 +169,7 @@ function AcheterM(e){
       alert("le produit va etre ajouté");
       const couleurchoisie=document.getElementById("couleurM").value; 
       const taillechoisie= "Taille unique"; 
-      const prixProdU=document.getElementById("prixM").innerHTML;
+      const prixProdU=document.getElementById("prixM").innerHTML.selectedIndex;
       const nomProd ="Musicaplante";
       AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU);
 }
