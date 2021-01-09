@@ -108,7 +108,7 @@ const boutonAcheterM = document.getElementById("boutonAjouterM");
 
 function AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU) {
       
-      const row = panier.insertRow(1);
+      const row = panier.insertRow(-2);
       const ProdCell = document.createElement("td");
       const removeCell = document.createElement("td");
       const subpriceCell = document.createElement("td");
@@ -141,7 +141,6 @@ function AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU) {
       row.appendChild(ProdCell);
       row.appendChild(removeCell);
       row.appendChild(subpriceCell);
-      panier.appendChild(row);
       alert("le produit a été ajouté");
 }
 
@@ -149,7 +148,7 @@ function AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU) {
 function AcheterP(e){
       alert("le produit va etre ajouté");
       const couleurchoisie=document.getElementById("couleurP").value; 
-      const taillechoisie= document.getElementById("tailleP").innerHTML;  
+      const taillechoisie= document.getElementById("tailleP").selectedIndex.innerHTML;  
       const prixProdU=document.getElementById("prixP").value;
       const nomProd = "Pot connecté";
  	alert(nomProd,couleurchoisie,taillechoisie,prixProdU);
@@ -159,7 +158,7 @@ function AcheterP(e){
 function AcheterA(e){
       alert("le produit va etre ajouté");
       const couleurchoisie=document.getElementById("couleurA").value; 
-      const taillechoisie= document.getElementById("tailleA").innerHTML;  
+      const taillechoisie= document.getElementById("tailleA").selectedIndex.innerHTML;  
       const prixProdU=document.getElementById("prixP").value;
       const nomProd ="Arrosoir";
       AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU);
