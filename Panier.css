@@ -91,6 +91,10 @@ table : td {
     display : flex;
 }
 
+#resumePanier, #partieProd {
+    width : 50%;
+}
+
 .bouton {
     display:block;
     width:100px;
