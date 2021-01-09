@@ -15,9 +15,7 @@
     </style>
     
     <script>
-
         function Confirmer(){
-            confirmation.addEventListener("click",function () {
                 const nom=document.getElementById("nom").value;
                 const prenom=document.getElementById("prenom").value;
                 const email=document.getElementById("email").value;
@@ -29,13 +27,15 @@
                 } else {
                     alert("Vous recevrez un mail à l'adresse ",email, " avec le montant de la facture et un lien de paiement. Merci de votre achat !");
                 }
-        });
+        }
+        function script(){
+            confirmation.addEventListener("click",Confirmer); 
         }
     </script>
 
 </head>
     
-<body onload="Confirmer();">
+<body onload="script();">
    <header>
     <nav>
       <a href="index.html" style="margin-left:30px;">Accueil </a>
