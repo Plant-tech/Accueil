@@ -15,14 +15,13 @@
     </style>
     
     <script>
-        const nom=document.getElementById("nom").value;
-        const prenom=document.getElementById("prenom").value;
-        const email=document.getElementById("email").value;
-        const adresse=document.getElementById("adresse").value;
-        const ville=document.getElementById("ville").value;
-        const codepostal=document.getElementById("codepostal").value;
-        
         function Confirmer(){
+            const nom=document.getElementById("nom").value;
+            const prenom=document.getElementById("prenom").value;
+            const email=document.getElementById("email").value;
+            const adresse=document.getElementById("adresse").value;
+            const ville=document.getElementById("ville").value;
+            const codepostal=document.getElementById("codepostal").value;
             if (nom && prenom && adresse &&email && codepostal && ville) {
                 alert("Veuillez remplir tous les champs !");
             } else {
