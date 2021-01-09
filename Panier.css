@@ -82,7 +82,9 @@ table : td {
     margin: auto;
 }
 
-
+#partieProd {
+    width : 30%;
+}
 
 
 .bouton {
