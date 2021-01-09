@@ -15,19 +15,21 @@
     </style>
     
     <script>
+
         function Confirmer(){
-            const nom=document.getElementById("nom").value;
-            const prenom=document.getElementById("prenom").value;
-            const email=document.getElementById("email").value;
-            const adresse=document.getElementById("adresse").value;
-            const ville=document.getElementById("ville").value;
-            const codepostal=document.getElementById("codepostal").value;
-            if (nom && prenom && adresse &&email && codepostal && ville) {
-                alert("Veuillez remplir tous les champs !");
-            } else {
-                alert("Vous recevrez un mail à l'adresse ",email, " avec le montant de la facture et un lien de paiement. Merci de votre achat !");
-            }
-        }
+            confirmation.addEventListener("click",function Confirmer() {
+                const nom=document.getElementById("nom").value;
+                const prenom=document.getElementById("prenom").value;
+                const email=document.getElementById("email").value;
+                const adresse=document.getElementById("adresse").value;
+                const ville=document.getElementById("ville").value;
+                const codepostal=document.getElementById("codepostal").value;
+                if (nom && prenom && adresse &&email && codepostal && ville) {
+                    alert("Veuillez remplir tous les champs !");
+                } else {
+                    alert("Vous recevrez un mail à l'adresse ",email, " avec le montant de la facture et un lien de paiement. Merci de votre achat !");
+                }
+        });
     </script>
 
 </head>
