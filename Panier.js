@@ -122,7 +122,7 @@ function RechargePanier(){
     for (i=0; i<soustot.length; i++){
         t+= parseFloat(soustot[i].innerHTML); 
     }
-    total.innerText=t + " euros";
+    total.innerText=t + "€";
 }
 
 // suppression produits
@@ -211,7 +211,7 @@ function AcheterM(e){
       const c=document.getElementById("couleurM").value; 
       const couleurchoisie=getCouleurM(c);
       const taillechoisie= "Taille unique"; 
-      const prixProdU=100;
+      const prixProdU="100€";
       const nomProd ="Musicaplante";
       AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU);
 }
