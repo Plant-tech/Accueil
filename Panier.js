@@ -108,7 +108,7 @@ const boutonAcheterM = document.getElementById("boutonAjouterM");
 
 function AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU) {
       
-      const row = panier.insertRow(-2);
+      const row = panier.insertRow(1);
       const ProdCell = document.createElement("td");
       const removeCell = document.createElement("td");
       const subpriceCell = document.createElement("td");
