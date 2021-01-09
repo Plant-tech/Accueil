@@ -163,7 +163,7 @@ function AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU) {
       ProdCell.appendChild(br);
       ProdCell.appendChild(br);
       const div1 = document.createElement("div");
-      div1.innerText="Taille : " + taillechoisie +"   ||  "+"Couleur : " + couleurchoisie;
+      div1.innerText="Taille : " + taillechoisie +"       "+"Couleur : " + couleurchoisie;
       ProdCell.appendChild(div1);
       
       // pour la case de suppression
