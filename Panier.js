@@ -57,13 +57,13 @@ function changeSizeP(value) {
 function getTailleP(v) {
 	if (v=="A"){
 		return "9 cm";
-	}elif (v=="B"){
+	} elseif (v=="B"){
 		return "12 cm";
-	}elif (v=="C"){
+	}elseif (v=="C"){
 		return "15 cm";
-	}elif (v=="D"){
+	}elseif (v=="D"){
 		return "20 cm";
-	}elif (v=="E"){
+	}elseif (v=="E"){
 		return "30 cm";
 	}else {
 		return "Non identifiée";
@@ -73,9 +73,9 @@ function getTailleP(v) {
 function getTailleA(v) {
 	if (v=="F"){
 		return "50cl";
-	}elif (v=="G"){
+	}elseif (v=="G"){
 		return "1L";
-	}elif (v=="H"){
+	}elseif (v=="H"){
 		return "1.5L";
 	}else {
 		return "Non identifiée";
@@ -85,9 +85,9 @@ function getTailleA(v) {
 function getCouleurM(v) {
 	if (v=="I"){
 		return "Noir";
-	}elif (v=="J"){
+	}elseif (v=="J"){
 		return "Chrome";
-	}elif (v=="K"){
+	}elseif (v=="K"){
 		return "Blanc";
 	}else {
 		return "Non identifiée";
