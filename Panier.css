@@ -63,7 +63,7 @@ table : td {
 }
 #panier
 {
- width : 70%;
+ width : 40%;
  margin: auto;
  border: 2px ;
  border-collapse : collapse;
@@ -80,10 +80,6 @@ table : td {
 
 #boutonValidation {
     margin: auto;
-}
-
-#partieProd {
-    width : 30%;
 }
 
 
