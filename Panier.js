@@ -69,11 +69,11 @@ panier.addEventListener("change", RechargePanier);
 
 function RechargePanier(){
     if (panier.rows.length <=2){
-        Rpanier.style.visibility='hidden';
+        Rpanier.style.visibility='visible';
         paniervide.style.visibility='visible';
     } else{
         Rpanier.style.visibility='visible';
-        paniervide.style.visibility='hidden';
+        paniervide.style.visibility='visible';
     }
 
     // calcul total produits
