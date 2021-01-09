@@ -141,6 +141,7 @@ function AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU) {
       row.appendChild(removeCell);
       row.appendChild(subpriceCell);
       panier.appendChild(row);
+      alert("le produit a été ajouté");
 }
 
 
@@ -150,6 +151,7 @@ function AcheterP(e){
       const taillechoisie= document.getElementById("tailleP").innerHTML;  
       const prixProdU=document.getElementById("prixP").value;
       const nomProd = "Pot connecté";
+ 	alert(nomProd,couleurchoisie,taillechoisie,prixProdU);
       AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU);
 }
 
