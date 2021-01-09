@@ -148,7 +148,7 @@ function AcheterP(e){
       alert("le produit va etre ajouté");
       alert(document.getElementById("couleurP").value);
       const couleurchoisie=document.getElementById("couleurP").value; 
-      const taillechoisie= document.getElementById("tailleP").value.tostring;  
+      const taillechoisie= document.getElementById("tailleP").innerHTML;  
       const prixProdU=document.getElementById("prixP").value;
       const nomProd = "Pot connecté";
       AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU);
@@ -158,7 +158,7 @@ function AcheterA(e){
       alert("le produit va etre ajouté");
       alert(document.getElementById("couleurA").value); 
       const couleurchoisie=document.getElementById("couleurA").value; 
-      const taillechoisie= document.getElementById("tailleA").value;  
+      const taillechoisie= document.getElementById("tailleA").innerHTML;  
       const prixProdU=document.getElementById("prixP").value;
       const nomProd ="Arrosoir";
       AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU);
