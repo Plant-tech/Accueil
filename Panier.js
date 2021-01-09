@@ -87,7 +87,7 @@ function RechargePanier(){
 
 // suppression produits
 
-removeBouton.addEventListener("click", remove);
+
 
 function remove(){
     event.target.parentElement.parentElement.remove();
@@ -109,7 +109,7 @@ function AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU) {
       
       const row = document.createElement("tr");
       const ProdCell = document.createElement("td");
-      const quantityCell = document.createElement("td");
+      const removeCell = document.createElement("td");
       const subpriceCell = document.createElement("td");
       row.className="ligneProduit";
       subpriceCell.className="soustotal";
@@ -130,15 +130,15 @@ function AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU) {
       
       const removeButton=document.createElement("button");
       removeButton.className="bouton boutonblanc";
-      removeButton.id="removeBouton";
       removeButton.innerText="Supprimer";
+      removeButton.addEventListener("click",remove);
       quantityCell.appendChild(removeButton);
       
       //pour la case subprice
       subpriceCell.innerText= prixProdU;
       
       row.appendChild(ProdCell);
-      row.appendChild(quantityCell);
+      row.appendChild(removeCell);
       row.appendChild(subpriceCell);
       panier.appendChild(row);
 }
@@ -146,7 +146,6 @@ function AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU) {
 
 function AcheterP(e){
       alert("le produit va etre ajouté");
-      alert(document.getElementById("couleurP").value);
       const couleurchoisie=document.getElementById("couleurP").value; 
       const taillechoisie= document.getElementById("tailleP").innerHTML;  
       const prixProdU=document.getElementById("prixP").value;
@@ -156,7 +155,6 @@ function AcheterP(e){
 
 function AcheterA(e){
       alert("le produit va etre ajouté");
-      alert(document.getElementById("couleurA").value); 
       const couleurchoisie=document.getElementById("couleurA").value; 
       const taillechoisie= document.getElementById("tailleA").innerHTML;  
       const prixProdU=document.getElementById("prixP").value;
@@ -166,7 +164,6 @@ function AcheterA(e){
 
 function AcheterM(e){
       alert("le produit va etre ajouté");
-      alert(document.getElementById("couleurM").value); 
       const couleurchoisie=document.getElementById("couleurM").value; 
       const taillechoisie= "Taille unique"; 
       const prixProdU=document.getElementById("prixM").value;
