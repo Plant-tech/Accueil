@@ -63,7 +63,7 @@ table : td {
 }
 #panier
 {
- 
+ width : 70%;
  margin: auto;
  border: 2px ;
  border-collapse : collapse;
