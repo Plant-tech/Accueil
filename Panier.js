@@ -124,7 +124,7 @@ function AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU) {
       ProdCell.appendChild(br);
       ProdCell.appendChild(br);
       const div1 = document.createElement("div");
-      div1.innerText="Taille : " + taillechoisie +"   "+"couleur : " + couleurchoisie;
+      div1.innerText="Taille : " + taillechoisie +"   ||  "+"Couleur : " + couleurchoisie;
       ProdCell.appendChild(div1);
       
       // pour la case de suppression
@@ -159,7 +159,7 @@ function AcheterA(e){
       alert("le produit va etre ajouté");
       const couleurchoisie=document.getElementById("couleurA").value; 
       const taillechoisie= document.getElementById("tailleA").value.innerHTML;  
-      const prixProdU=document.getElementById("prixP").value;
+      const prixProdU=document.getElementById("prixA").value;
       const nomProd ="Arrosoir";
       AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU);
 }
@@ -168,8 +168,8 @@ function AcheterM(e){
       alert("le produit va etre ajouté");
       const couleurchoisie=document.getElementById("couleurM").value; 
       const taillechoisie= "Taille unique"; 
-      const prixProdU=document.getElementById("prixM").value;
-      const nomProd = "Musicaplante";
+      const prixProdU=document.getElementById("prixM").value.innerText;
+      const nomProd ="Musicaplante";
       AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU);
 }
 
