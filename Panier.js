@@ -167,9 +167,9 @@ function AcheterA(e){
 
 function AcheterM(e){
       alert("le produit va etre ajouté");
-      const couleurchoisie=document.getElementById("couleurM").value; 
+      const couleurchoisie=document.getElementById("couleurM").innerText; 
       const taillechoisie= "Taille unique"; 
-      const prixProdU=document.getElementById("prixM").value;
+      const prixProdU=document.getElementById("prixM").innerText;
       const nomProd ="Musicaplante";
       AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU);
 }
