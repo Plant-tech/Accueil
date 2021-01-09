@@ -63,7 +63,6 @@ table : td {
 }
 #panier
 {
- margin: auto;
  border: 2px ;
  border-collapse : collapse;
  border-color: rgb(255, 242, 208);
