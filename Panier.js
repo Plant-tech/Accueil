@@ -132,7 +132,7 @@ function RechargePanier(){
 function remove(){
     event.target.parentElement.parentElement.remove();
     RechargePanier();
-    alert("L'object a bien été supprimé !");
+    alert("Le produit a bien été supprimé !");
     
 } 
 
@@ -186,34 +186,42 @@ function AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU) {
 
 
 function AcheterP(e){
-      alert("le produit va etre ajouté");
       const couleurchoisie=document.getElementById("couleurP").value; 
       const t= document.getElementById("tailleP").value;
       const taillechoisie = getTailleP(t);
       const prixProdU=document.getElementById("prixP").value;
       const nomProd = "Pot connecté";
- 	alert(nomProd,couleurchoisie,taillechoisie,prixProdU);
-      AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU);
+	if (t=="" || couleurchoisie=="") {
+		alert("Selectionner une option de taille et/ou de couleur");
+	}else {
+     	AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU);
+	}
 }
 
 function AcheterA(e){
-      alert("le produit va etre ajouté");
       const couleurchoisie=document.getElementById("couleurA").value; 
       const t= document.getElementById("tailleA").value;
       const taillechoisie = getTailleA(t);
       const prixProdU=document.getElementById("prixA").value;
       const nomProd ="Arrosoir";
-      AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU);
+	if (t=="" || couleurchoisie=="") {
+		alert("Selectionner une option de taille et/ou de couleur");
+	}else {
+     	AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU);
+	}
 }
 
 function AcheterM(e){
-      alert("le produit va etre ajouté");
       const c=document.getElementById("couleurM").value; 
       const couleurchoisie=getCouleurM(c);
       const taillechoisie= "Taille unique"; 
       const prixProdU="100€";
       const nomProd ="Musicaplante";
-      AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU);
+	if (c=="") {
+		alert("Selectionner une option de taille et/ou de couleur");
+	}else {
+      	AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU);
+	}
 }
 
 boutonAcheterP.addEventListener("click", AcheterP); 
