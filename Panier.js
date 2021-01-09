@@ -65,9 +65,10 @@ const total = document.getElementById("total");
 // Affichage du panier 
 
 RechargePanier();
+panier.addEventListener("change", RechargePanier);
 
 function RechargePanier(){
-    if (panier.rows.length <=2){
+    if (panier.rows.length <=1){
         Rpanier.style.visibility='hidden';
         paniervide.style.visibility='visible';
     } else{
