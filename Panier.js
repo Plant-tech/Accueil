@@ -54,6 +54,45 @@ function changeSizeP(value) {
 	}
 }
 
+function getTailleP(v) {
+	if (v=="A"){
+		return "9 cm";
+	}elif (v=="B"){
+		return "12 cm";
+	}elif (v=="C"){
+		return "15 cm";
+	}elif (v=="D"){
+		return "20 cm";
+	}elif (v=="E"){
+		return "30 cm";
+	}else {
+		return "Non identifiée";
+	}
+}
+
+function getTailleA(v) {
+	if (v=="F"){
+		return "50cl";
+	}elif (v=="G"){
+		return "1L";
+	}elif (v=="H"){
+		return "1.5L";
+	}else {
+		return "Non identifiée";
+	}
+}
+
+function getCouleurM(v) {
+	if (v=="I"){
+		return "Noir";
+	}elif (v=="J"){
+		return "Chrome";
+	}elif (v=="K"){
+		return "Blanc";
+	}else {
+		return "Non identifiée";
+	}
+}	
 
 const paniervide=document.getElementById("rien");
 const Rpanier =document.getElementById("resumePanier");
@@ -149,7 +188,8 @@ function AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU) {
 function AcheterP(e){
       alert("le produit va etre ajouté");
       const couleurchoisie=document.getElementById("couleurP").value; 
-      const taillechoisie= document.getElementById("tailleP").value;  
+      const t= document.getElementById("tailleP").value;
+      const taillechoisie = getTailleP(t);
       const prixProdU=document.getElementById("prixP").value;
       const nomProd = "Pot connecté";
  	alert(nomProd,couleurchoisie,taillechoisie,prixProdU);
@@ -159,7 +199,8 @@ function AcheterP(e){
 function AcheterA(e){
       alert("le produit va etre ajouté");
       const couleurchoisie=document.getElementById("couleurA").value; 
-      const taillechoisie= document.getElementById("tailleA").value;  
+      const t= document.getElementById("tailleA").value;
+      const taillechoisie = getTailleA(t);
       const prixProdU=document.getElementById("prixA").value;
       const nomProd ="Arrosoir";
       AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU);
@@ -167,7 +208,8 @@ function AcheterA(e){
 
 function AcheterM(e){
       alert("le produit va etre ajouté");
-      const couleurchoisie=document.getElementById("couleurM").value; 
+      const c=document.getElementById("couleurM").value; 
+      const couleurchoisie=getCouleurM(c);
       const taillechoisie= "Taille unique"; 
       const prixProdU=document.getElementById("prixM").value;
       const nomProd ="Musicaplante";
