@@ -132,7 +132,7 @@ function AjouterPanier(nomProd,couleurchoisie,taillechoisie,prixProdU) {
       removeButton.className="bouton boutonblanc";
       removeButton.innerText="Supprimer";
       removeButton.addEventListener("click",remove);
-      quantityCell.appendChild(removeButton);
+      removeCell.appendChild(removeButton);
       
       //pour la case subprice
       subpriceCell.innerText= prixProdU;
