@@ -88,17 +88,9 @@ table : td {
 #boutonValidation {
     margin: auto;
 }
-/*
+
 #AjouterPanier {
     display : flex;
-}*/
-#resumePanier {
-    width : 70%;
-    float : left;
-}
-#partieProd {
-    width : 30%;
-    float : left;
 }
 
 .bouton {
