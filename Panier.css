@@ -80,9 +80,6 @@ table : td {
 #boutonValidation {
     margin: auto;
 }
-#listeProd {
-    widht : 40%;
-}
 
 .bouton {
     display:block;
