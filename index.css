@@ -128,7 +128,7 @@ hr{
     width:500px;
 }
 
-.tproduct img, .conteneur img{
+.tproduct img, .conteneur img, #partieProd img{
     width:300px;
     height:300px;
     border-radius:200px;
@@ -147,8 +147,14 @@ hr{
     height:200px;
 }
 
+.team:hover{
+    transition:0.5s;
+    transform: scale(1.1);
+
+}
+
 /**** PRODUITS ****/
-input{
+.conteneur input{
     font-size:14px;
     color:white;
     height:20%;
@@ -160,7 +166,7 @@ input{
     width:140px;
 }
 
-input:hover{
+.conteneur input:hover{
     background-color:#6cac20;
     cursor:pointer;
 }
@@ -198,14 +204,86 @@ form {
 	margin: 5px;
 }
 
-/**** NOTRE EQUIPE ****/
-.who{
-    column-count:2;
+/**** PANIER ****/
+
+#titlevide {
+    color: green;
+    text-align: center;
+    font-size:16px;
+}
+
+#AjouterPanier {
+    display : flex;
+    flex-wrap:nowrap;
+    justify-content: center;
+}
+
+#partieProd, #resumePanier{
+  text-align:center;
+}
+
+/* Boutons */
+.boutonblanc{
+    background-color:white;
+    color:grey;
+    border: 2px solid grey;
+    height:30px;
+    box-shadow:none;
+
+    display:block;
+    text-align:center;
+    border-radius: 8px;
 } 
 
-ul{ 
-    text-align: center;
-    list-style:none
+.boutonblanc:hover{
+    background-color:white;
+    border: 2px solid white;
+    cursor:pointer;
+}
+
+#boutonValidation, #confirmation{
+    width:200px;
+    height:40px;
+    font-size:18px;
+} 
+
+/* Tableau panier */
+.tableauProduits th{   
+    background-color:#6cac20;
+    color:white;} 
+
+.tableauProduits{
+    border-collapse : collapse;
+    margin:30px;
+}
+
+.tableauProduits tr:nth-child(even) {
+    background: rgb(255, 242, 208);
+} 
+
+.tableauProduits tr:nth-child(odd) {
+    background: white;
+} 
+
+/* Liste ordonnée */
+ol {
+    counter-reset: produit;
+}
+
+#listeProd li{
+    list-style-type:none;
+    counter-increment: produit;
+}
+
+#listeProd li:before{
+    content: counter(produit);
+    padding: 10px 20px 30px;
+    vertical-align: top;
+    background-color:#6cac20;
+    border-radius:200px;
+    font-weight:bold;
+    font-size:16px;
+    color:white;
 }
 
 
