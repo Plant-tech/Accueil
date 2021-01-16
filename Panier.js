@@ -94,7 +94,7 @@ function getCouleurM(v) {
 	}
 }	
 
-const paniervide=document.getElementById("rien");
+const paniervide=document.getElementById("titlevide");
 const Rpanier =document.getElementById("resumePanier");
 const panier=document.getElementById("panier");
 const soustot = panier.getElementsByClassName("soustotal");
